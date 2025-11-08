@@ -1,0 +1,39 @@
+Task 4:Number Theory - Level 1 (Includes Factorial, Fibonacci Series, Odd or Even, Sum of Digits,...)
+
+Program:
+
+#include <stdio.h>
+
+int countDigitsInFactorial(int n);
+
+int main() {
+
+int n;
+
+printf("Enter a positive integer: ");
+
+scanf("%d", &n);
+
+int count = countDigitsInFactorial(n):
+
+printf("Number of digits in %d! =\% d ln" n, count);
+
+return 0;
+
+int countDigitsInFactorial(int n) { if (n < 0) { return 0;
+
+} if (n <= 1)
+
+{return 1;
+
+) double digits
+
+= 0 ;
+
+for (int i = 2 i <= n i++)
+
+}
+
+{digits += log(10) * (i)
+
+return 0;
