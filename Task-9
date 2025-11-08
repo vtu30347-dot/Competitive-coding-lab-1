@@ -1,0 +1,54 @@
+Program:
+
+#include <stdio.h> #include <string.h>
+
+int main() { int t;
+
+scanf("%d", &t); // read the number of test
+
+cases
+
+while (t-) {
+
+char s1 [10005], s2[10005], ans [20005]; scanf("%s %s", s1, s2); // read the two strings
+
+int len1 = strlen(s1), len2 = strlen(s2); int i,
+
+j, k; i = j = k = 0;
+
+// merge the strings alternatively while (i < len1 && j < len2) {
+
+ans[k++] = s1[i++]; ans[k++] = s2[j++];
+
+}
+
+// add the remaining characters from s1 or s2 while (i < len1) ans[k++] = s1[i++]; while (j < len2) ans[k++] = s2[j++];
+
+ans[k] = '\0'; // add null terminator to the merged string
+
+printf("%s\n", ans); // print the merged
+
+string
+
+}
+
+return 0;
+
+}
+Program:
+
+#include <iostream> using namespace
+
+std;
+
+void inputData() { int t, a;
+
+string b; cin >> t; while(t--) {
+
+cin >> a >> b;
+
+cout << a << " " << b << endl;
+
+int main() { inputData(); return 0;
+
+{
