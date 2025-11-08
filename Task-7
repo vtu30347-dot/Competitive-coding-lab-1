@@ -1,0 +1,33 @@
+#include <stdio.h> #include
+
+<string.h>
+
+int main() {
+
+char sentence[100]; char
+
+replace_char;
+
+printf("Enter a sentence:");
+
+fgets(sentence,100,stdin);
+
+printf("Enter a character to
+
+replace:"); scanf("%c"
+
+&replace_char);
+
+for (inti=
+
+0;i<strlen(sentence);
+
+i++) { if (sentence[i] ==
+
+replace_char) {
+
+sentence[1]= #;
+
+}
+
+printf("Modified sentence: %s", sentence); return 0; }
