@@ -1,0 +1,45 @@
+Task 5: Basic Number Theory 1
+
+1.Program:
+
+#include <stdio.h>
+
+#include <math.h>
+
+#define MOD 1000000007
+
+int main()
+
+{ int t;
+
+scanf("%d", &t);
+
+while (t--) { long
+
+long scanf("%lld", &n);
+
+n;
+
+long long min_sum = ((n-1)* (n-1)*n/4) % MOD; // Minimum sum long long max_sum = ((n* (n+1)) (2*(n + 1))/(12)) % MOD; // Maximum sum printf("%lld %lld\n", min_sum, max_sum);
+
+} } return 0;
+
+2.Program:
+
+#include
+
+<stdio.h> int
+
+gcd(int a, int b) { if (b == 0)
+
+{ return a;
+
+}
+
+return gcd(b, a % b);
+
+} int main()
+
+{ int a, b;
+
+scanf("%d %d", &a, &b); int result = gcd(a, b); printf("%d\n", result); return 0; }
