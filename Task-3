@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+
+#include <string.h>
+
+int main() {
+
+char
+
+sentence [100];
+
+char replace_char;
+
+printf("Enter a sentence: ");
+
+fgets(sentence, 100, stdin);
+
+printf("Enter a character to
+
+replace: "); scanf("%c", &replace_char);
+
+for (int i = 0; i < strlen(sentence);
+
+i++) { if (sentence[i] ==
+
+replace_char) {
+
+sentence[i] = '#';
+
+}
+
+printf("Modified sentence: %s", sentence); return 0; }
+
+PROGRAM: Task 3B
+
+#include
+
+#include
+
+<time.h>
+
+<stdio.h> #include <stdlib.h> int main() { srand(time (0)); int randomNumber = rand() % 100 + 1; int
+
+scanf("%d", &guess); if (guess >
+
+randomNumber) {
+
+guess; do { printf("Guess the number between 1 and 100: "); printf("Too high, try again.\n"); else if (guess < randomNumber) { printf("Too low, try again.\n");
+} } while (guess != randomNumber); printf("Congratulations! You guessed the number %d.\n", randomNumber); return 0; }
